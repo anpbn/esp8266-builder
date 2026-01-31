@@ -1,0 +1,11 @@
+{
+  "name": "ESP8266",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-pip && pip3 install platformio && pio platform install espressif8266",
+  "customizations": {
+    "vscode": {
+      "extensions": ["platformio.platformio-ide"]
+    }
+  }
+}
+
